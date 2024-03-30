@@ -1,8 +1,7 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  display: flex;
+  height: 100vh;
 }
 
 .logo {
@@ -40,3 +39,46 @@
 .read-the-docs {
   color: #888;
 }
+
+.layout {
+  display: flex;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner {
+  width: 85vw;
+  display: flex;
+  justify-content: center;
+  background-color: #382a3d;
+}
+
+.sidebar {
+  width: 15vw;
+  background-color: #4b2a67c0;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 4rem;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
