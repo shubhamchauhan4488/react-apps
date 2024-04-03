@@ -1,0 +1,19 @@
+.info-card {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    border: black 1px dashed;
+    border-radius: 20px;
+}
+.info-card>img{
+    border-radius: 20px;
+}
+.info-detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+.info-detail-wrapper>p{
+    margin: 1px;
+}
