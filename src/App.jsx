@@ -1,14 +1,17 @@
+import React from 'react';
 import { Outlet } from "react-router-dom";
 import reactLogo from './assets/react.svg'
 import reactRouterLogo from './assets/react-router-logo.webp'
 import viteLogo from '/vite.svg'
 import './App.css'
-
-import React from 'react';
 import { Link } from 'react-router-dom';
+import { AppContext } from "./context/AppContext";
+import { useTheme } from './hooks';
 
 const Dashboard = () => {
+  const { themeId, toggleTheme } = useTheme()
   return (
+    <AppContext.Provider value={{themeId,toggleTheme}}>
     <div className="layout">
       <div className="sidebar">
         <h2>React Apps</h2>
@@ -37,7 +40,7 @@ const Dashboard = () => {
         </div>
       </div>
     </div>
-
+    </AppContext.Provider>
   );
 };
 

@@ -8,16 +8,15 @@ import { themes } from "../../theme";
 
 export const ImdbHome = () => {
     //theme toggler
-    const { theme, toggleTheme } = useContext(AppContext);
+    const { themeId, toggleTheme } = useContext(AppContext);
     const [searchText, setSearchText] = useState('');
     const [names, setNames] = useState([])
     const [titles, setTitles] = useState([])
 
     // get the current theme styling
-    const newTheme = themes[theme];
+    const newTheme = themes[themeId];
 
     const inputChangeHandler = (e) => {
-        console.log(e.target.value)
         setSearchText(e.target.value)
     }
 
@@ -31,7 +30,7 @@ export const ImdbHome = () => {
     }
 
     return (
-        <div style={{color: newTheme.textColor, backgroundColor: newTheme.bodyColor}}>
+        <div style={{color: newTheme["color"], backgroundColor: newTheme["background-color"]}}>
             <label htmlFor="textInput">Enter Text:</label>
             <input
                 type="text"
