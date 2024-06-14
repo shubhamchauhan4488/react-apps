@@ -8,7 +8,7 @@ const Div = styled.div`
     border-radius: 50%;
     border: 1px black solid;
     display: inline-block;
-    background-color: ${({ rating, selectedidx }) => selectedidx <= rating ? "yellow" : 'white'}
+    background-color: ${({ rating, currentIdx }) => currentIdx <= rating ? "yellow" : 'white'}
 `
 
 export const Rating = ({ ratingLength = 5 }) => {
@@ -34,7 +34,7 @@ export const Rating = ({ ratingLength = 5 }) => {
             {ratingArray?.length > 0 && ratingArray.map((_, index) => {
                 return (
                     <Div
-                        selectedidx={index + 1}
+                        currentIdx={index + 1}
                         rating={rating}
                         onMouseEnter={() => handleRating(index)}
                     />
