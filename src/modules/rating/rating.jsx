@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const Div = styled.div`
     height: 40px;
     width: 40px;
+    margin: 10px;
     border-radius: 50%;
     border: 1px black solid;
     display: inline-block;
