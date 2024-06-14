@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import ErrorPage from './ErrorPage.jsx';
 import { Counter } from './modules/counter/counter.jsx';
-import { Movies } from './modules/imdb/movies.jsx';
+import { ImdbHome } from './modules/imdb/imdbHome.jsx';
 import { Rating } from './modules/rating/rating.jsx';
 
 const router = createBrowserRouter([
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       },
       {
         path: "imdb",
-        element: <Movies />,
+        element: <ImdbHome />,
       },
       {
         path: "rating",
