@@ -1,8 +1,8 @@
 import { useContext, useState } from "react"
 import { fetchMovies } from "./api"
-import { NamesList } from "./peopleList";
+import { NamesList } from "./PeopleList";
 import './index.css';
-import { TitlesList } from "./titleList";
+import { TitlesList } from "./TitleList";
 import { AppContext } from "../../context/AppContext";
 import { themes } from "../../theme";
 
