@@ -19,6 +19,7 @@ const Dashboard = () => {
           <li><Link to="/counter">Counter</Link></li>
           <li><Link to="/imdb">IMDB</Link></li>
           <li><Link to="/rating">Rating</Link></li>
+          <li><Link to="/webWorker">Web Worker</Link></li>
         </ul>
       </div>
       <div className='dashboard'>
